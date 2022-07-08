@@ -1,0 +1,86 @@
+/*------------Projects--------*/
+
+.boxes-of-examples {
+    margin:15px;
+    }
+    
+    .overlay {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .resurs {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translateY(100%);
+      transition-property: transform;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+      padding: 63px 24px;
+      width: 322px;
+        height: 168px;
+      font-size: 18px;
+      line-height: 1.5;
+      letter-spacing: 0.03em;
+    
+      color: #ffffff;
+      background-color: rgba(33, 150, 243, 0.9);
+      .porfolio-link:hover &,
+      .porfolio-link:focus &{
+      transform: translateY(0)
+    }
+    }
+    
+    
+    
+    .porfolio-link{
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      display: block;
+      &:hover,
+      &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    }
+    
+    
+    
+    .potfolio-list {
+      flex-basis: calc(100% / 3 - 60px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+    }
+    
+    .portfolio-border {
+      border: 1px solid #EEEEEE;
+      border-style:none solid solid solid;
+    padding: 24px 20px;
+    
+    }
+    
+    .title-service {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin-bottom: 4px;
+    }
+    
+    .title-applications {
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    color: #757575;
+    }
+    
+    
+    
+    
+    
+    

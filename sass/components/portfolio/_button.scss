@@ -1,0 +1,38 @@
+.scroll {
+    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  
+  }
+  
+  
+  .button{
+  transition-property:color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  background:#F5F4FA;;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  padding-top:6px;
+  padding-right:22px ;
+  padding-bottom:6px ;
+  padding-left:22px;
+  margin-right: 8px;
+  &:hover,
+  &:focus,
+  &:active{
+  background-color:#2196F3;
+  color: white;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+
+  }
+  
+  

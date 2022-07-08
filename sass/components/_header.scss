@@ -1,0 +1,187 @@
+
+/*----------Header-------*/
+
+.header-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.20;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+    margin-right: 93px;
+    
+    
+    }
+    .header-logo-studio {
+      color: black;
+    }
+    
+    .header-studio {
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: #212121;;
+      text-decoration: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      &:active,
+      &:hover,
+      &:focus{
+      color:#2196F3;
+    }
+    }
+    
+    .current {
+      position: relative;
+      color:  #2196f3;
+      .header-portfolio-contacts & {
+        color:#2196f3
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+      
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background-color: #2196F3;
+        
+      }
+    }
+    
+    
+    
+    
+    
+    
+    
+    .header {
+      border-bottom: 1px solid #ececec;
+    }
+    
+  
+    .header .container  {
+    display:flex;
+    }
+    
+    .header-nav  {
+    display:flex;
+    align-items: center;
+    
+    }
+    
+    
+    .menu {
+    display:flex;
+    align-items: center;
+    }
+    
+    .menu-item {
+    margin-right: 50px;
+    &:nth-child(3n) {
+      margin-right: 0;
+      }
+    }
+    
+    
+    
+    
+    .title {
+      display:flex;
+      align-items: center;
+    
+    }
+    
+    .quality {
+      margin-right: 30px;
+    }
+    
+    .quality:nth-child(4n) {
+      margin-right: 0;
+    }
+    
+    
+    .contacts-list {
+      display:flex;
+      align-items: center;
+      margin-left: auto;
+    
+    }
+    
+    /*---------SVG-post-logo----*/
+    
+.header-post-icon,
+.header-tel-icon {
+align-self: center;
+margin-right: 10px;
+fill: currentColor;
+&:hover,
+&:focus {
+  color: #2196F3;
+
+}
+&:hover {
+  color: #2196F3;
+  }
+}
+
+
+    
+    .header-portfolio-contacts {
+    
+      transition-property:color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      display: block;
+    
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: #212121;
+      text-decoration: none;
+      padding-top: 32px;
+      padding-bottom: 32px;
+      &:hover,
+      &:focus,
+      &:active{
+      color:#2196F3;
+    }
+    
+    }
+    
+    
+    .header-email {
+    margin-right: 50px;
+    }
+    
+    .contacs-link {
+    
+    transition-property:color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color:#757575;
+    padding-top:32px;
+    padding-bottom:32px;
+    display: flex;
+    align-items: center;
+    &:hover, &:focus {
+      color: #2196F3;
+    }
+
+    }
+    
+    
+    
