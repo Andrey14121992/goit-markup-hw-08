@@ -1,9 +1,38 @@
 .scroll {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
   display: flex;
-  justify-content: center;
-  
+  flex-wrap: wrap;
+  @media screen and (max-width: 767px) {
+    margin-top: -15px;
   }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+
+.scroll__item  {
+  margin-right: 8px;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}  
+
   
   
   .button{

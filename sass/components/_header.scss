@@ -2,17 +2,29 @@
 /*----------Header-------*/
 
 .header-logo {
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.20;
+    /*font-size: 26px;
+    line-height: 1.20;*/
     letter-spacing: 0.03em;
     color: #2196F3;
     text-decoration: none;
-    margin-right: 93px;
+    /*margin-right: 93px;*/
     
+    @media screen and (min-width: 768px) {
+      margin-right: 88px;
+  }
+      @media screen and (min-width: 768px) {
+          margin-right: 93px;
+          font-size: 26px;
+          line-height: 1.2;
+      }
+}
     
-    }
+
     .header-logo-studio {
       color: black;
     }
@@ -53,9 +65,15 @@
         height: 4px;
         border-radius: 2px;
         background-color: #2196F3;
-        
       }
+    
+      @media screen and (min-width: 1200px) {
+        display: block;
     }
+
+     }
+      
+    
     
     
     
@@ -70,7 +88,18 @@
   
     .header .container  {
     display:flex;
+    align-items: center;
+    height: 60px;
+
+    @media screen and (min-width: 768px) {
+      height: 80px;
     }
+  
+    @media screen and (max-width: 1199px) {
+      justify-content: space-between;
+    }
+  }
+    
     
     .header-nav  {
     display:flex;
@@ -80,9 +109,14 @@
     
     
     .menu {
-    display:flex;
-    align-items: center;
-    }
+      display: none;
+      @media screen and (min-width: 768px) {
+              display: block;
+              display: flex;
+              justify-content: space-around;
+                  
+          }
+  }
     
     .menu-item {
     margin-right: 50px;
@@ -110,11 +144,23 @@
     
     
     .contacts-list {
-      display:flex;
-      align-items: center;
-      margin-left: auto;
+      
+      display: none;
     
-    }
+
+      @media screen and (min-width: 768px) {
+          display: block;
+          margin-left: auto;
+          
+          
+      }
+          @media screen and (min-width: 1200px) {
+              display: flex;
+              
+          }
+  }
+    
+    
     
     /*---------SVG-post-logo----*/
     
@@ -159,9 +205,15 @@ fill: currentColor;
     }
     
     
-    .header-email {
-    margin-right: 50px;
-    }
+    .header-item:not(:last-child) {
+      margin-bottom: 10px;
+  
+      @media screen and (min-width: 1200px) {
+      
+          margin-bottom: 0;
+          margin-right: 50px;
+      }
+  }
     
     .contacs-link {
     
@@ -173,15 +225,27 @@ fill: currentColor;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color:#757575;
-    padding-top:32px;
-    padding-bottom:32px;
+    /*padding-top:32px;
+    padding-bottom:32px;*/
     display: flex;
     align-items: center;
     &:hover, &:focus {
       color: #2196F3;
     }
+    @media screen and (min-width: 1200px) {
+      padding-top: 21px;
+      padding-bottom: 21px;
+      
+              }
 
-    }
+ @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+}
+
+  }
+    
     
     
     

@@ -7,8 +7,28 @@
     }
     
     .footer .container {
-    display: flex;
+      @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        }
+        @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        }
     }
+      
+    .footer_wrapper {
+      margin-bottom: 60px;
+    text-align: center;
+    @media screen and (min-width: 1200px) {
+    text-align: left;
+    margin-bottom: 0;
+    }
+}
+    
+      
+  
     
 
     .footer-logo {
@@ -89,16 +109,19 @@
     /*-------Соц сети футер------*/
     
     .footer-soc {
-    margin-right: auto;
-    padding-top: 12px;
-    margin-left: 70px
-    
+      margin-bottom: 60px;
+      text-align: center;
+      @media screen and (min-width: 1200px) {
+           text-align: left;
+           margin-left: 70px;
+           margin-bottom: 0;
+          }
     
     }
     
     .footer-soc-list {
     display: flex;
-    
+    justify-content: center;
     
     }
     
@@ -166,7 +189,18 @@
     /*----------Подпишитесь на рассылку--------------*/
 
 .footer-mailing-list {
-    margin-left: 93px;
+    
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+     width: 450px;      
+    }
+        @media screen and (min-width: 1200px) {
+          text-align: left;
+          margin-left: 93px;
+          margin-bottom: 0;
+        }
     }
     
     .mailing-text {
@@ -180,15 +214,17 @@
     }
     
     .mailing-form {
+    @media screen and(min-width: 1200px) { 
     display: flex;
     align-items: center;
-    
+      }
     }
     
     
     .mailing-input {
     margin-right: 12px;
     padding-left: 16px;
+    margin-bottom: 20px;
     width: 358px;
     height: 50px;
     color: rgba(255, 255, 255, 0.6);
@@ -203,6 +239,11 @@
       color: rgba(255, 255, 255, 0.6);
       }
 
+      @media screen and(min-width: 1200px) {
+        width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
     }
     
     
@@ -210,6 +251,9 @@
     .mailing-button {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      margin-right: auto;
+      margin-left: auto;
       width: 200px;
       padding:10px 29px;
       font-weight: 700;

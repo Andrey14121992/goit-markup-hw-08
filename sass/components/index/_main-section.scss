@@ -1,7 +1,7 @@
 /*--------Main---------*/
 
 .main-section-service {
-    background: #2F303A;
+  background: #2F303A;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -9,12 +9,69 @@
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/Img-fon.jpg);
+    url(../images/mobile/Hero-mobile-1x-480-min.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    
+
+    @media screen and (min-width: 768px) {
+      max-width: 768px;
+    }
+    @media screen and (min-width: 1200px) {
+      max-width: 1600px;
+      max-height: 600px;
+      padding: 200px 0;
+    }
   }
   
+  @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .main-section-service {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/mobile/Hero-mobile-2x-480-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-section-service {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/tablet/Hero-tablet-1x-768-min.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section-service {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/tablet/Hero-tablet-2x-768-min.jpg);
+    }
+  }
+ }
+
+ @media screen and (min-width: 1200px) {
+  .main-section-service {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/dekstop/Hero-dekstop-1x-1600-min.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .main-section-service {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/dekstop/Hero-dekstop-2x-1600-min.jpg);
+    }
+  }
+}
+
+
+
+
   .qualities {
     padding-bottom: 94px;
   }
@@ -45,7 +102,39 @@
   text-transform: uppercase;
   color: #FFFFFF;
   width: 696px;
+
   }
+  
+
+  .qualitys___title {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+    }
+  }
+
+.quality{
+  max-width: 450px;
+  margin: 0 0 30px 0;
+
+  @media screen and (max-width: 767px) {
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    width: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+  }
+}
+
+
   
   
   .main-button-service {

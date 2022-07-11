@@ -19,24 +19,67 @@
 
      <!--Заголовки-->
      <header class="header">
-        <div class="container">
+      <div class="container">
 <nav class="header-nav">
-    
-    <a   href="" class="header-logo">Web<span class="header-logo-studio">Studio</span></a>
-        <ul class="dot menu">
-            <li class="menu-item"><a href="./index.html" class="header-studio">Студия</a></li>
-            <li class="menu-item"><a href="./portfolio.html" class="header-portfolio-contacts current">Портфолио</a></li>
-            <li class="menu-item"><a href="" class="header-portfolio-contacts">Контакты</a></li>
-        </ul>
-        </nav>
+  
+  <a   href="" class="header-logo">Web<span class="header-logo-studio">Studio</span></a>
+      <ul class="dot menu">
+          <li class="menu-item"><a href="./index.html" class="header-studio">Студия</a></li>
+          <li class="menu-item"><a href="./portfolio.html" class="header-portfolio-contacts current">Портфолио</a></li>
+          <li class="menu-item"><a href="" class="header-portfolio-contacts ">Контакты</a></li>
+      </ul>
+      </nav>
 <ul class="dot contacts-list">
-    <li class="header-email"> <a href="mailto:info@devstudio.com" class="contacs-link"> <svg class="header-post-icon" width="16" height="12">
-        <use href="./images/icons.svg#icon-envelope"></use></svg
-      >info@devstudio.com</a></li>
-    <li><a href="tel:+380961111111" class="contacs-link"> <svg class="header-tel-icon" width="10" height="16"> <use href="./images/icons.svg#icon-smartphone"></use></svg>+380961111111</a></li>
+  <li class="header-item"> <a href="mailto:info@devstudio.com" class="contacs-link"> <svg class="header-post-icon" width="16" height="12">
+      <use href="./images/icons.svg#icon-envelope"></use></svg
+    >info@devstudio.com</a></li>
+  <li class="header-item"><a href="tel:+380961111111" class="contacs-link"> <svg class="header-tel-icon" width="10" height="16"> <use href="./images/icons.svg#icon-smartphone"></use></svg>+380961111111</a></li>
 </ul>
+ 
+<button type="button" class="menu-open-btn">
+  <svg width="24" height="16">
+    <use class="icon-menu" href="./images/icon-menu_24px"></use>
+  </svg>
+  </button>
+  <div class="mob-menu is hidden">
+    <button type="button" class="close-open-btn">
+  <svg width="19" height="19">
+    <use class="icon-cross" href="./images/icons.svg#icon-close_24px"></use>
+    </svg>
+  </button>
+        <div class="mob-menu-top">
+           <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link link active">Студия</a>
+            </li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты</a></li>
+          </ul>
         </div>
-    </header>
+            <div class="mob-menu-bottom">
+            <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+            <a href="tel:+380961111111" class="mob-tel link"
+              >+38 096 111 11 11</a>
+          </li>
+          <li class="mob-contacts-item">
+            <a href="mailto:info@devstudio.com" class="mob-post link"
+              >info@devstudio.com</a
+            >
+          </li>
+       </ul>
+        <ul class="menu-soc-list">
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Instagram</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Twitter</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Facebook</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">LinkedIn</a></li>
+        </ul>
+             </div>
+          
+            </div>
+      </div>
+  </header>
+
 
 
             <!--Основная часть-->
@@ -45,23 +88,36 @@
             <section class="section">
                 <div class="container">
  <ul class="dot scroll">
-     <li><button type="button" class="button">Все</button></li>
-     <li><button type="button" class="button">Веб-сайты</button></li>
-     <li><button type="button" class="button">Приложения</button></li>
-     <li><button type="button" class="button">Дизайн</button></li>
-     <li><button type="button" class="button">Маркетинг</button></li>
+     <li class="scroll__item"><button type="button" class="button">Все</button></li>
+     <li class="scroll__item"><button type="button" class="button">Веб-сайты</button></li>
+     <li class="scroll__item"><button type="button" class="button">Приложения</button></li>
+     <li class="scroll__item"><button type="button" class="button">Дизайн</button></li>
+     <li class="scroll__item"><button type="button" class="button">Маркетинг</button></li>
  </ul>
 
     <ul class="dot potfolio-list">
     <li class="boxes-of-examples">
     <a href="" class="porfolio-link">
       <div class="overlay">
+        <picture>
+          <source
+          srcset="./images/dekstop/Technokryak-dekstop-1x-370-min.jpg 1x, 
+          ./images/dekstop/Technokryak-dekstop-2x-370-min.jpg 2x"
+          media="(min-width: 1200px)"/>
+          
+          <source
+          srcset="./images/tablet/Technokryak-tablet-2x-354-min.jpg 1x,
+          ./images/tablet/Technokryak-tablet-2x-354-min.jpg 2x"
+          media="(min-width: 768px)"/>
+
+          <source
+          srcset="./images/mobile/Techokryak-mobile-1x-450-min.jpg 1x,
+          ./images/mobile/Techokryak-mobile-1x-450-min.jpg 2x"
+          media="(min-width: 480px)"/>
     <img class="img"
-     src="images/img-technjcryak(1).jpg"
+     src="./images/mobile/Techokryak-mobile-1x-450-min.jpg"
      alt="Сотрудники сайта"
-     width="370"
-     height="294"
-     />
+     /></picture>
       <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
      </div>
@@ -76,12 +132,25 @@
     <li class="boxes-of-examples">
      <a href="" class="porfolio-link">
       <div class="overlay">
+        <picture>
+          <source
+          srcset="./images/dekstop/Poster-dekstop-1x-370-min.jpg 1x, 
+          ./images/dekstop/Poster-dekstop-2x-370-min.jpg 2x"
+          media="(min-width: 1200px)"/>
+          
+          <source
+          srcset="./images/tablet/Poster-tablet-2x-354-min.jpg 1x,
+          ./images/tablet/Poster-tablet-2x-354-min.jpg 2x"
+          media="(min-width: 768px)"/>
+
+          <source
+          srcset="./images/mobile/Poster-mobile-1x-450-min.jpg 1x,
+          ./images/mobile/Poster-mobile-1x-450-min.jpg 2x"
+          media="(min-width: 480px)"/>
     <img class="img"
-     src="images/img-poster(1).jpg"
+     src="./images/mobile/Poster-mobile-1x-450-min.jpg"
      alt="Два баскетболиста"
-     width="370"
-     height="294"
-     />
+     /></picture>
      <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
       Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
       </div>
@@ -95,12 +164,26 @@
     <li class="boxes-of-examples">
       <a href="" class="porfolio-link">
         <div class="overlay">
+          <picture>
+            <source
+            srcset="./images/dekstop/Seafood-dekstop-1x-370-min.jpg 1x, 
+            ./images/dekstop/Seafood-dekstop-2x-370-min.jpg 2x"
+            media="(min-width: 1200px)"/>
+            
+            <source
+            srcset="./images/tablet/Seafood-tablet-2x-354-min.jpg 1x,
+            ./images/tablet/Seafood-tablet-2x-354-min.jpg 2x"
+            media="(min-width: 768px)"/>
+  
+            <source
+            srcset="./images/mobile/Seafood-mobile-1x-450-min.jpg 1x,
+            ./images/mobile/Seafood-mobile-1x-450-min.jpg 2x"
+            media="(min-width: 480px)"/>
         <img class="img"
-         src="images/img-restoran(1).jpg"
+         src="./images/mobile/Seafood-mobile-1x-450-min.jpg"
          alt="Рыбный ресторан"
-         width="370"
-         height="294"
-         />
+        
+         /></picture>
          <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
           Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
           </div>
@@ -114,12 +197,25 @@
         <li class="boxes-of-examples">
           <a href="" class="porfolio-link">
             <div class="overlay">
+              <picture>
+                <source
+                srcset="./images/dekstop/Headphones-dekstop-1x-370-min.jpg 1x, 
+                ./images/dekstop/Headphones-dekstop-2x-370-min.jpg 2x"
+                media="(min-width: 1200px)"/>
+                
+                <source
+                srcset="./images/tablet/Headphones-tablet-2x-354-min.jpg 1x,
+                ./images/tablet/Headphones-tablet-2x-354-min.jpg 2x"
+                media="(min-width: 768px)"/>
+      
+                <source
+                srcset="./images/mobile/Headphones-mobile-1x-450-min.jpg 1x,
+                ./images/mobile/Headphones-mobile-1x-450-min.jpg 2x"
+                media="(min-width: 480px)"/>
             <img class="img"
-             src="images/img-headphones(1).jpg"
+             src="./images/mobile/Headphones-mobile-1x-450-min.jpg"
              alt="Наушники"
-             width="370"
-             height="294"
-             />
+             /></picture>
              <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
               Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
               </div>
@@ -133,12 +229,25 @@
             <li class="boxes-of-examples">
               <a href="" class="porfolio-link">
                 <div class="overlay">
+                  <picture>
+                    <source
+                    srcset="./images/dekstop/Boxes-dekstop-1x-370-min.jpg 1x, 
+                    ./images/dekstop/Boxes-dekstop-2x-370-min.jpg 2x"
+                    media="(min-width: 1200px)"/>
+                    
+                    <source
+                    srcset="./images/tablet/Boxes-tablet-2x-354-min.jpg 1x,
+                    ./images/tablet/Boxes-tablet-2x-354-min.jpg 2x"
+                    media="(min-width: 768px)"/>
+          
+                    <source
+                    srcset="./images/mobile/Boxes-mobile-1x-450-min.jpg 1x,
+                    ./images/mobile/Boxes-mobile-1x-450-min.jpg 2x"
+                    media="(min-width: 480px)"/>
                 <img class="img"
-                 src="images/img-box(1).jpg"
+                 src="./images/mobile/Book-mobile-1x-450-min.jpg"
                  alt="Коробки"
-                 width="370"
-                 height="294"
-                 />
+                 /></picture>
                  <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                   </div>
@@ -152,12 +261,25 @@
                 <li class="boxes-of-examples">
                   <a href="" class="porfolio-link">
                     <div class="overlay">
+                      <picture>
+                        <source
+                        srcset="./images/dekstop/Monitor-dekstop-1x-370-min.jpg 1x, 
+                        ./images/dekstop/Monitor-dekstop-2x-370-min.jpg 2x"
+                        media="(min-width: 1200px)"/>
+                        
+                        <source
+                        srcset="./images/tablet/Monitor-tablet-2x-354-min.jpg 1x,
+                        ./images/tablet/Monitor-tablet-2x-354-min.jpg 2x"
+                        media="(min-width: 768px)"/>
+              
+                        <source
+                        srcset="./images/mobile/Monitor-mobile-1x-450-min.jpg 1x,
+                        ./images/mobile/Monitor-mobile-1x-450-min.jpg 2x"
+                        media="(min-width: 480px)"/>
                     <img class="img"
-                     src="images/img-monitor(1).jpg"
+                     src="./images/mobile/Monitor-mobile-1x-450-min.jpg"
                      alt="Монитор"
-                     width="370"
-                     height="294"
-                     />
+                     /></picture>
                      <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                       Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                       </div>
@@ -171,12 +293,25 @@
                     <li class="boxes-of-examples">
                       <a href="" class="porfolio-link">
                         <div class="overlay">
+                          <picture>
+                            <source
+                            srcset="./images/dekstop/Book-dekstop-1x-370-min.jpg 1x, 
+                            ./images/dekstop/Book-dekstop-2x-370-min.jpg 2x"
+                            media="(min-width: 1200px)"/>
+                            
+                            <source
+                            srcset="./images/tablet/Book-tablet-2x-354-min.jpg 1x,
+                            ./images/tablet/Book-tablet-2x-354-min.jpg 2x"
+                            media="(min-width: 768px)"/>
+                  
+                            <source
+                            srcset="./images/mobile/Book-mobile-1x-450-min.jpg 1x,
+                            ./images/mobile/Book-mobile-1x-450-min.jpg 2x"
+                            media="(min-width: 480px)"/>
                         <img class="img"
-                         src="images/img-book(1).jpg"
+                         src="./images/mobile/Book-mobile-1x-450-min.jpg"
                          alt="Книга"
-                         width="370"
-                         height="294"
-                         />
+                         /></picture>
                          <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                           Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                           </div>
@@ -190,12 +325,25 @@
                         <li class="boxes-of-examples">
                           <a href="" class="porfolio-link">
                             <div class="overlay">
+                              <picture>
+                                <source
+                                srcset="./images/dekstop/Lab-dekstop-1x-370-min.jpg 1x, 
+                                ./images/dekstop/Lab-dekstop-2x-370-min.jpg 2x"
+                                media="(min-width: 1200px)"/>
+                                
+                                <source
+                                srcset="./images/tablet/Lab-tablet-2x-354-min.jpg 1x,
+                                ./images/tablet/Lab-tablet-2x-354-min.jpg 2x"
+                                media="(min-width: 768px)"/>
+                      
+                                <source
+                                srcset="./images/mobile/Lab-mobile-1x-450-min.jpg 1x,
+                                ./images/mobile/Lab-mobile-1x-450-min.jpg 2x"
+                                media="(min-width: 480px)"/>
                             <img class="img"
-                             src="images/img-lab(1).jpg"
+                             src="./images/mobile/Lab-mobile-1x-450-min.jpg"
                              alt="Брелок"
-                             width="370"
-                             height="294"
-                             />
+                             /></picture>
                              <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                               Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                               </div>
@@ -209,12 +357,26 @@
                             <li class="boxes-of-examples">
                               <a href="" class="porfolio-link">
                                 <div class="overlay">
+                                  <picture>
+                                    <source
+                                    srcset="./images/dekstop/Notebook-dekstop-1x-370-min.jpg 1x, 
+                                    ./images/dekstop/Notebook-dekstop-2x-370-min.jpg 2x"
+                                    media="(min-width: 1200px)"/>
+                                    
+                                    <source
+                                    srcset="./images/tablet/Notebook-tablet-2x-354-min.jpg 1x,
+                                    ./images/tablet/Notebook-tablet-2x-354-min.jpg 2x"
+                                    media="(min-width: 768px)"/>
+                          
+                                    <source
+                                    srcset="./images/mobile/Notebook-mobile-1x-450-min.jpg 1x,
+                                    ./images/mobile/Notebook-mobile-1x-450-min.jpg 2x"
+                                    media="(min-width: 480px)"/>
                                 <img class="img"
-                                 src="images/img-noutbuk(1).jpg"
+                                <img class="img"
+                                 src="./images/mobile/Notebook-mobile-1x-450-min.jpg"
                                  alt="Ноутбук"
-                                 width="370"
-                                 height="294"
-                                 />
+                                 /></picture>
                                  <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
                                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                                   </div>
@@ -232,10 +394,9 @@
 
 
             <!--Подвал-->
-          
             <footer class="footer">
               <div class="container">
-                <div>
+                <div class="footer_wrapper">
               <a href="" class="header-logo details">Web<span class="footer-logo">Studio</span></a>
               <address>
               <ul class="dot">
@@ -245,54 +406,54 @@
               </ul>
           </address>
               </div>
-            
-                <div class="footer-soc">
-                    <strong class="footer-soc-title">присоединяйтесь</strong>
-                    <ul class="footer-soc-list">
-                      <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link">
-                          <svg class="footer-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link">
-                          <svg class="footer-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link">
-                          <svg class="footer-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="footer-soc-item">
-                        <a href="" class="footer-soc-link link">
-                          <svg class="footer-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin"></use>
-                          </svg>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
-                  <div class="footer-mailing-list">
-                    <h2 class="mailing-text">Подпишитесь на рассылку</h2>
-                    <form class="mailing-form">
-                    <input type="text" name="email" placeholder="E-mail" class="mailing-input"/>
-                    <button type="submit" class="mailing-button">Подписаться<svg class="telegram-icon" width="24" height="24">
-                      <use href="./images/icons.svg#icon-send-telegram"></use>
-                    </svg>
-                    </button>
-                  </form>
-                    </div>
-                  </div>
-
+          
+              <div class="footer-soc">
+                  <h3 class="footer-soc-title">присоединяйтесь</h3>
+                  <ul class="footer-soc-list">
+                    <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                        <svg class="footer-soc-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-instagram"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                        <svg class="footer-soc-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-twitter"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                        <svg class="footer-soc-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="footer-soc-item">
+                      <a href="" class="footer-soc-link link">
+                        <svg class="footer-soc-icon" width="20" height="20">
+                          <use href="./images/icons.svg#icon-linkedin"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
                 
-                </footer>
+                <div class="footer-mailing-list">
+                <h2 class="mailing-text">Подпишитесь на рассылку</h2>
+                <form class="mailing-form">
+                <input type="text" name="email" placeholder="E-mail" class="mailing-input"/>
+                <button type="submit" class="mailing-button">Подписаться<svg class="telegram-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send-telegram"></use>
+                </svg>
+                </button>
+              </form>
+                </div>
+              </div>
+          
+              </footer>
+            
             </body>
             </html>
