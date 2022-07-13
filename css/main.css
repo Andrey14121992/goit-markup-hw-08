@@ -312,16 +312,17 @@ a {
 /*--------Main---------*/
 .main-section-service {
   background: #2F303A;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+  max-height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile/Hero-mobile-1x-480-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .main-section-service {
@@ -378,23 +379,29 @@ a {
 .main-title {
   margin-left: auto;
   margin-right: auto;
+  margin-top: 0;
   margin-bottom: 30px;
-  text-align: center;
+  color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
-  width: 696px;
+  width: 360px;
+}
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 44px;
+    line-height: 1.36;
+    width: 696px;
+    height: 120px;
+  }
 }
 
-@media screen and (min-width: 768px) {
-  .qualitys___title {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -15px;
-  }
+.qualitys__title {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
 }
 
 .quality {
@@ -441,9 +448,11 @@ a {
 }
 
 .qualities__title {
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
+  text-align: center;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -577,6 +586,7 @@ a {
   background: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
 @media screen and (max-width: 767px) {
@@ -934,6 +944,11 @@ a {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 }
+@media screen and (max-width: 479.5px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}
 
 .modal {
   box-sizing: border-box;
@@ -1124,7 +1139,7 @@ a {
 }
 
 .scroll {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -1302,7 +1317,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .menu-open-btn {
     display: none;
   }
@@ -1320,11 +1335,6 @@ a {
 .close-open-btn:hover, .close-open-btn:focus {
   fill: #2196f3;
 }
-.close-open-btn {
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .mob-menu {
   display: flex;
@@ -1341,14 +1351,31 @@ a {
   background-color: #ffffff;
   overflow-y: scroll;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .mob-menu {
     display: none;
   }
 }
 
+.mobmenu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+@media screen and (min-width: 480px) {
+  .mobmenu-container {
+    max-width: 480px;
+  }
+}
+
 .mob-menu-list {
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 .mob-menu-item:not(:last-child) {
@@ -1407,6 +1434,7 @@ a {
 }
 
 .menu-soc-list {
+  margin-bottom: 48px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 64px;

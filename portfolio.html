@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!------<link rel="stylesheet" href="./css/styles.css">--->
+    
     <link rel="stylesheet" href="./css/main.min.css">
 
 
@@ -38,21 +38,23 @@
  
 <button type="button" class="menu-open-btn">
   <svg width="24" height="16">
-    <use class="icon-menu" href="./images/icon-menu_24px"></use>
+    <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
   </svg>
   </button>
-  <div class="mob-menu is hidden">
+  <div class="mob-menu is-hidden">
+    <div class="mobmenu-container">
     <button type="button" class="close-open-btn">
   <svg width="19" height="19">
     <use class="icon-cross" href="./images/icons.svg#icon-close_24px"></use>
     </svg>
   </button>
+    
         <div class="mob-menu-top">
            <ul class="mob-menu-list">
             <li class="mob-menu-item">
               <a href="./index.html" class="mob-menu-link link active">Студия</a>
             </li>
-            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a></li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link ">Портфолио</a></li>
             <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты</a></li>
           </ul>
         </div>
@@ -75,8 +77,9 @@
           <li class="menu-soc-item"><a href="" class="menu-soc-link link">LinkedIn</a></li>
         </ul>
              </div>
-          
             </div>
+            </div>
+
       </div>
   </header>
 
@@ -118,8 +121,10 @@
      src="./images/mobile/Techokryak-mobile-1x-450-min.jpg"
      alt="Сотрудники сайта"
      /></picture>
+     <div class="project__overlay">
       <p class="resurs">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. 
         Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+      </div>
      </div>
 
      <div class="portfolio-border">
@@ -373,7 +378,6 @@
                                     ./images/mobile/Notebook-mobile-1x-450-min.jpg 2x"
                                     media="(min-width: 480px)"/>
                                 <img class="img"
-                                <img class="img"
                                  src="./images/mobile/Notebook-mobile-1x-450-min.jpg"
                                  alt="Ноутбук"
                                  /></picture>
@@ -454,6 +458,6 @@
               </div>
           
               </footer>
-            
+              <script src="./js/menu.js"></script>
             </body>
             </html>

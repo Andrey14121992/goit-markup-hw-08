@@ -10,7 +10,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <!----<link rel="stylesheet" href="./css/styles.css"-->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
@@ -32,9 +31,54 @@
       >info@devstudio.com</a></li>
     <li class="header-item"><a href="tel:+380961111111" class="contacs-link"> <svg class="header-tel-icon" width="10" height="16"> <use href="./images/icons.svg#icon-smartphone"></use></svg>+380961111111</a></li>
 </ul>
+        
 
 
+<button type="button" class="menu-open-btn">
+  <svg width="24" height="16">
+    <use class="icon-menu" href="./images/icons.svg#icon-menu_24px"></use>
+    
+  </svg>
+  </button>
+  <div class="mob-menu is-hidden">
+    <div class="mobmenu-container">
+    <button type="button" class="close-open-btn">
+  <svg width="19" height="19">
+    <use class="icon-cross" href="./images/icons.svg#icon-close_24px"></use>
+    </svg>
+  </button>
+    
+        <div class="mob-menu-top">
+           <ul class="mob-menu-list">
+            <li class="mob-menu-item">
+              <a href="./index.html" class="mob-menu-link link active">Студия</a>
+            </li>
+            <li class="mob-menu-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a></li>
+            <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты</a></li>
+          </ul>
         </div>
+            <div class="mob-menu-bottom">
+            <ul class="mob-contacts-list">
+            <li class="mob-contacts-item">
+            <a href="tel:+380961111111" class="mob-tel link"
+              >+38 096 111 11 11</a>
+          </li>
+          <li class="mob-contacts-item">
+            <a href="mailto:info@devstudio.com" class="mob-post link"
+              >info@devstudio.com</a
+            >
+          </li>
+       </ul>
+        <ul class="menu-soc-list">
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Instagram</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Twitter</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">Facebook</a></li>
+          <li class="menu-soc-item"><a href="" class="menu-soc-link link">LinkedIn</a></li>
+        </ul>
+             </div>
+            </div>
+            </div>
+          </div>
     </header>
 
 
@@ -49,7 +93,7 @@
     
         <section class="section qualities">
             <div class="container">
-<ul class="qualitys___title title">
+<ul class="qualitys__title title">
     <li class="quality">
         <div class="qualities__wrapper">
             <svg class="qualities__icon" width="70" height="70">
@@ -93,7 +137,7 @@
                 <li>
                   <a href="" class="work__box"><img class="img"
                     srcset="./images/dekstop/Comp-dekstop-1x-370-min.jpg 1x,
-                    ./images/dekstop/Comp-dekstop-2x-370-min.jpg 1x"
+                    ./images/dekstop/Comp-dekstop-2x-370-min.jpg 2x"
                      src="./images/dekstop/Comp-dekstop-1x-370-min.jpg"
                      alt="Печать на клавиатуре для планшета"
                      width="370"
@@ -106,7 +150,7 @@
                      <li>
                       <a href="" class="work__box"><img class="img"
                         srcset="./images/dekstop/Mobile-dekstop-1x-370-min.jpg 1x,
-                        ./images/dekstop/Mobile-dekstop-2x-370-min.jpg 1x"
+                        ./images/dekstop/Mobile-dekstop-2x-370-min.jpg 2x"
                          src="./images/dekstop/Mobile-dekstop-1x-370-min.jpg"
                          alt="Печатают на ноутбуке"
                          width="370"
@@ -120,7 +164,7 @@
                      <li>
                       <a href="" class="work__box"><img class="img"
                         srcset="./images/dekstop/Tablet-dekstop-1x-370-min.jpg 1x,
-                        ./images/dekstop/Tablet-dekstop-2x-370-min.jpg 1x"
+                        ./images/dekstop/Tablet-dekstop-2x-370-min.jpg 2x"
                          src="./images/dekstop/Tablet-dekstop-1x-370-min.jpg"
                          alt="Печать на планшете стилусом"
                          width="370"
@@ -152,7 +196,7 @@
 
                     <source
                     srcset="./images/mobile/Igor-mobile-1x-450-min.jpg 1x,
-                    ./images/mobile/Igor-mobile-1x-450-min.jpg 2x"
+                    ./images/mobile/Igor-mobile-2x-450-min.jpg 2x"
                     media="(min-width: 480px)"/>
                 <img class="img"
                  src="./images/mobile/Igor-mobile-1x-450-min.jpg"
@@ -213,7 +257,7 @@
 
                     <source
                     srcset="./images/mobile/Olga-mobile-1x-450-min.jpg 1x,
-                    ./images/mobile/Olga-mobile-1x-450-min.jpg 2x"
+                    ./images/mobile/Olga-mobile-2x-450-min.jpg 2x"
                     media="(min-width: 480px)"/>
                     <img class="img"
                      src="./images/mobile/Olga-mobile-1x-450-min.jpg"
@@ -273,7 +317,7 @@
     
                         <source
                         srcset="./images/mobile/Nikolay-mobile-1x-450-min.jpg 1x,
-                        ./images/mobile/Nikolay-mobile-1x-450-min.jpg 2x"
+                        ./images/mobile/Nikolay-mobile-2x-450-min.jpg 2x"
                         media="(min-width: 480px)"/>
                         <img class="img"
                          src="./images/mobile/Nikolay-mobile-1x-450-min.jpg"
@@ -332,7 +376,7 @@
         
                             <source
                             srcset="./images/mobile/Mixail-mobile-1x-450-min.jpg 1x,
-                            ./images/mobile/Mixail-mobile-1x-450-min.jpg 2x"
+                            ./images/mobile/Mixail-mobile-2x-450-min.jpg 2x"
                             media="(min-width: 480px)"/>
                             <img class="img"
                              src="./images/mobile/Mixail-mobile-1x-450-min.jpg"
