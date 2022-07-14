@@ -3,9 +3,7 @@ body {
     color:#212121;
     font-family: 'Roboto', sans-serif;
     margin: 0;
-    &.no-scroll {
-      overflow: hidden;
-  }
+    
   
   }
   
@@ -63,6 +61,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    
     @media screen and (min-width:480px) {
       max-width: 480px;
     }

@@ -3,10 +3,11 @@
 .footer  {
     background: #2F303A;
     padding-top: 60px;
-    padding-bottom: 60px
+    padding-bottom: 60px;
     }
     
     .footer .container {
+      
       @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
@@ -20,16 +21,17 @@
       
     .footer_wrapper {
       margin-bottom: 60px;
-      
     text-align: center;
+
+  
     @media screen and (min-width: 1200px) {
     text-align: left;
     margin-bottom: 0;
     }
-}
+     }
+
     
-      
-  
+    
     
 
     .footer-logo {
@@ -41,9 +43,9 @@
     .details {
      margin-bottom: 20px;
      display: inline-block;
-      
-    }
+      }
     
+
     .footer-adress {
       margin-bottom: 9px;
     }
