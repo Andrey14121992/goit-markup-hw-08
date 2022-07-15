@@ -134,15 +134,12 @@
   max-width: 450px;
   margin: 0 0 30px 0;
 
-  
   @media screen and (max-width: 767px) {
     &:last-child {
       margin: 0;
     }
   }
-
   
-
   
   @media screen and (min-width: 768px) {
     margin: 15px;
@@ -153,6 +150,7 @@
     width: calc((100% - 4 * 30px) / 4);
   }
 }
+
   
  
 
@@ -194,7 +192,11 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+  @media screen and (min-width: 768px) {
+    text-align: left;
   }
+}
+  
   
   .qualities__text {
   font-weight: 400;
